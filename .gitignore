@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Rohdaten & Embeddings (Job-Ads ausschließen)
+*.parquet
+*.parquet.gzip
+!data/isco_with_embeddings.parquet
+
+data/gold_standard_*.xlsx
+data/labeled*.csv
+data/merged_labels.csv
