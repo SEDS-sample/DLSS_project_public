@@ -31,7 +31,7 @@ DISCLAIMER: Job data files are not included in this repo, since we do not have p
  
 | Path | Description |
 |---|---|
-| `raw/ISCO-08 EN Structure and definitions.xlsx` | ISCO-08 handbook as downloaded from https://ilostat.ilo.org/methods/concepts-and-dePinitions/classiPication-occupation/ |
+| `raw/ISCO-08 EN Structure and definitions.xlsx` | ISCO-08 handbook as downloaded from https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://webapps.ilo.org/ilostat-files/ISCO/newdocs-08-2021/ISCO-08/ISCO-08%2520EN%2520Structure%2520and%2520definitions.xlsx&ved=2ahUKEwjSub7OoMuWAxWiSvEDHcHvBYAQFnoECDIQAQ&usg=AOvVaw0jD37dJEWJuevqacFy73lX |
 | `raw/job_data.parquet` | NOT INCLUDED. Unlabeled LinkedIn job postings ([source](https://huggingface.co/datasets/xanderios/linkedin-job-postings)) |
 | `gold_standard_done.xlsx` | NOT INCLUDED. The complete labeling of the gold standard set, i.e., including the cases resolved with an LLM|
 | `gold_standard_final.xlsx` | NOT INCLUDED. Combines the ISCO-08 labels of the gold standard set from all group members to one (where possible). Indicates cases that need to be resolved with an LLM |
