@@ -11,6 +11,9 @@ This project compares the performance of two LLM-based approaches for classifyin
 The resulting labels are used both to evaluate classification performance against a human-annotated gold standard and to support a downstream job market analysis.
 
 ## Overview 
+
+DISCLAIMER: Job data files are not included in this repo, since we do not have permission to further distribute the data. The URL for the data can be found at the bottom section of this file.
+
  This project builds a pipeline that:
  
 - Cleans and anonymizes raw job posting text (removing personal information such as emails, phone numbers, URLs, names, and organizations)
@@ -29,20 +32,20 @@ The resulting labels are used both to evaluate classification performance agains
 | Path | Description |
 |---|---|
 | `raw/ISCO-08 EN Structure and definitions.xlsx` | ISCO-08 handbook as downloaded from https://ilostat.ilo.org/methods/concepts-and-dePinitions/classiPication-occupation/ |
-| `raw/job_data.parquet` | Unlabeled LinkedIn job postings ([source](https://huggingface.co/datasets/xanderios/linkedin-job-postings)) |
-| `gold_standard_done.xlsx` | The complete labeling of the gold standard set, i.e., including the cases resolved with an LLM|
-| `gold_standard_final.xlsx` | Combines the ISCO-08 labels of the gold standard set from all group members to one (where possible). Indicates cases that need to be resolved with an LLM |
-| `gold_standard_Name.xlsx` | Contains the labels of each group member for the job-ads in the gold standard set |
+| `raw/job_data.parquet` | NOT INCLUDED. Unlabeled LinkedIn job postings ([source](https://huggingface.co/datasets/xanderios/linkedin-job-postings)) |
+| `gold_standard_done.xlsx` | NOT INCLUDED. The complete labeling of the gold standard set, i.e., including the cases resolved with an LLM|
+| `gold_standard_final.xlsx` | NOT INCLUDED. Combines the ISCO-08 labels of the gold standard set from all group members to one (where possible). Indicates cases that need to be resolved with an LLM |
+| `gold_standard_Name.xlsx` | NOT INCLUDED. Contains the labels of each group member for the job-ads in the gold standard set |
 | `isco_lvl2.csv` | For ISCO-08 level 2 groups, this data contains titles, definitions, codes, major groups and formatted prompt texts. Created in ISCO_preprocessing |
 | `isco_lvl3.csv` | For ISCO-08 level 3 groups, this data contains titles, definitions, codes, major groups and formatted prompt texts. Created in ISCO_preprocessing |
 | `isco_soc_closswalk.xls` | Translation of ISCO codes to US Bureau of Labor Statistics framework |
 | `isco_with_embeddings.parquet` | Embeddings for the ISCO class taxonomies |
-| `job_ads_cleaned_state.parquet` | Cleaned job ad corpus inlcluding an additional column coding the state of the job location |
-| `job_ads_cleaned.parquet` | Cleaned job-ad corpus |
-| `job_ads_with_embeddings.parquet` | Embeddings for the job ads of the validation set |
-| `labeled_corpus_final.parquet` | Job-ad corpus with ISCO-08 level 3 labels by our LLM |
-| `labeled.csv` | Job postings with final ISCO labels |
-| `merged_labels.csv` | Dataset of the 740 Job postings including all 3 rater labels |
+| `job_ads_cleaned_state.parquet` | NOT INCLUDED. Cleaned job ad corpus inlcluding an additional column coding the state of the job location |
+| `job_ads_cleaned.parquet` | NOT INCLUDED. Cleaned job-ad corpus |
+| `job_ads_with_embeddings.parquet` | NOT INCLUDED. Embeddings for the job ads of the validation set |
+| `labeled_corpus_final.parquet` | NOT INCLUDED. Job-ad corpus with ISCO-08 level 3 labels by our LLM |
+| `labeled.csv` | NOT INCLUDED. Job postings with final ISCO labels |
+| `merged_labels.csv` | NOT INCLUDED. Dataset of the 740 Job postings including all 3 rater labels |
 | `national_M2023_dl.xlsx` | Official US labor market statistics by the US Bureau of Labor Statistics |
 
 ### /notebooks
